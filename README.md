@@ -1,6 +1,6 @@
-# LearnSmarty - AI-Powered Flashcard Learning with the Leitner Method
+# LearnSmarty - Learn Smarter, Not Harder
 
-LearnSmarty is an educational platform that leverages the power of artificial intelligence to enhance the learning experience using flashcards and the proven Leitner method.
+LearnSmarty is an educational platform that leverages the power of AI to enhance the learning experience using flashcards and the proven Leitner method. AI-Powered Flashcard Learning with the Leitner Method
 
 ## Features
 
