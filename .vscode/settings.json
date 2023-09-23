@@ -17,6 +17,7 @@
         100,
         120
     ],
+    "editor.tabSize": 2,
     // remove trailing whitespace
     "files.trimTrailingWhitespace": true,
     // set eslint as the default formatter

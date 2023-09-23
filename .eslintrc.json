@@ -66,6 +66,7 @@
         }
     ],
     "import/no-extraneous-dependencies": [0],
+    "import/prefer-default-export": "off",
     "no-multiple-empty-lines": [
         "error",
         {
