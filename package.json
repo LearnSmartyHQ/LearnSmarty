@@ -10,6 +10,9 @@
     "start": "next start",
     "lint": "next lint",
     "lint:fix": "npm run lint --fix",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev --name init",
+    "prisma:push": "prisma db push",
     "check-types": "tsc --noEmit --pretty"
   },
   "dependencies": {
