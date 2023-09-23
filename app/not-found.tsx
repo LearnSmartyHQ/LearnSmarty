@@ -1,4 +1,10 @@
+import type { Metadata } from 'next';
 import Image from 'next/image';
+
+export const metadata: Metadata = {
+  title: 'Not Found',
+  description: '404 - Page not found',
+};
 
 export default function NotFound() {
   return (
@@ -7,7 +13,7 @@ export default function NotFound() {
         <div className="mx-8 w-full lg:w-1/2">
           <div className="mb-8 text-7xl font-extrabold text-green-500"> 404</div>
           <p className="mb-8 text-2xl font-light leading-normal md:text-3xl">
-            Sorry we couldn&apos;t find the page you&apos;re looking for
+            Sorry! we couldn&apos;t find the page you&apos;re looking for
           </p>
 
           <a
