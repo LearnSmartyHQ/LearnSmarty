@@ -6,6 +6,6 @@ export interface IApiMessage {
 
 export interface IApi {
   okay: Boolean;
-  result: unknown;
+  result?: unknown;
   messages?: IApiMessage[];
 }

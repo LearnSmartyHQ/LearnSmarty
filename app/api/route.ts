@@ -11,13 +11,11 @@ export async function GET(): Promise<NextResponse> {
       project: 'Learn Smarty',
       date: new Date().toISOString(),
     },
-    messages: [
-      {
-        title: 'Hello World!',
-        body: 'This is a sample response from the API.',
-        type: 'success',
-      },
-    ],
+    messages: [{
+      title: 'Hello World!',
+      body: 'This is a sample response from the API.',
+      type: 'success',
+    }],
   };
 
   return NextResponse.json(sampleResponse);
