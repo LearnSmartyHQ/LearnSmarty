@@ -42,7 +42,7 @@ export const sharedMetadata: Metadata = {
     { media: '(prefers-color-scheme: light)', color: 'white' },
     { media: '(prefers-color-scheme: dark)', color: 'black' },
   ],
-  manifest: `${siteUrl}manifest.json`,
+  // manifest: `${siteUrl}manifest.json`,
   viewport: {
     width: 'device-width',
     initialScale: 1,
