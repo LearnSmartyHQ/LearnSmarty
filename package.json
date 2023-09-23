@@ -2,6 +2,8 @@
   "name": "learn-smarty",
   "version": "0.1.0",
   "private": true,
+  "description": "Learn Smarter, Not Harder",
+  "license": "UNLICENSED",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -21,5 +23,25 @@
     "react-dom": "18.2.0",
     "tailwindcss": "3.3.3",
     "typescript": "5.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LearnSmartyHQ/LearnSmarty.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LearnSmartyHQ/LearnSmarty/issues"
+  },
+  "homepage": "https://learnsmarty.com/",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

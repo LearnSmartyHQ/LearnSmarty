@@ -1,0 +1,14 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "ms-azuretools.vscode-docker",
+    "eamodio.gitlens",
+    "dsznajder.es7-react-js-snippets",
+    "GitHub.copilot",
+    "ms-vscode.vscode-typescript-next",
+    "yzhang.markdown-all-in-one",
+    "burkeholland.simple-react-snippets",
+    "redhat.vscode-yaml",
+    "bradlc.vscode-tailwindcss",
+  ]
+}

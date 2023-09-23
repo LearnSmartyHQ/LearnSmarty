@@ -1,36 +1,23 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# LearnSmarty - AI-Powered Flashcard Learning with the Leitner Method
 
-## Getting Started
+LearnSmarty is an educational platform that leverages the power of artificial intelligence to enhance the learning experience using flashcards and the proven Leitner method.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Smart Flashcards**: LearnSmarty uses AI algorithms to optimize the presentation of flashcards based on your learning progress. It identifies which cards you need to review more frequently and which ones you've mastered.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Leitner Method Integration**: The Leitner system is a spaced repetition technique that helps users remember information more effectively. LearnSmarty automates this method, ensuring you review flashcards at the right intervals for maximum retention.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Customizable Decks**: Create custom flashcard decks tailored to your learning objectives. Whether you're studying a new language, preparing for exams, or mastering a new skill, LearnSmarty adapts to your needs.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Progress Tracking**: Keep track of your learning progress with detailed statistics and insights. Monitor your strengths and weaknesses, and see how you're improving over time.
 
-## Learn More
+- **Multi-Platform Access**: Access LearnSmarty on your desktop, tablet, or mobile device, making it easy to learn anytime, anywhere.
 
-To learn more about Next.js, take a look at the following resources:
+## Contributing
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+We welcome contributions from the community. If you'd like to contribute to LearnSmarty, please follow our contribution guidelines.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Contact
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+If you have questions, encounter issues, or would like to suggest new features or improvements, please feel free to [open an issue on GitHub](https://github.com/LearnSmartyHQ/LearnSmarty/issues). We appreciate your feedback and will respond as soon as possible. Your input helps us make LearnSmarty even better!
