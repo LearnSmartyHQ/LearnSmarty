@@ -3,7 +3,8 @@ import type { Metadata } from 'next';
 const siteUrl = 'https://learnsmarty.com/';
 const siteTitle = 'Learn Smarty';
 const siteSlogan = 'Learn Smarter, Not Harder.';
-const siteDesc = `AI-powered, personalized flashcard learning with the Leitner method for efficient education. ${siteSlogan} 😎 ${siteTitle} 🆒`;
+const siteShortDesc = 'AI-driven flashcards, making learning efficient and smart.';
+const siteDesc = `${siteShortDesc} ${siteSlogan} 😎 ${siteTitle} 🆒`;
 const siteKeywords = [
   'learn',
   'LearnSmarty',
