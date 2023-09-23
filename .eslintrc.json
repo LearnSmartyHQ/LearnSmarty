@@ -88,12 +88,7 @@
         "format": ["camelCase"]
       }
     ],
-    "@typescript-eslint/consistent-type-imports": "error",
-    "unused-imports/no-unused-imports": "error",
-    "unused-imports/no-unused-vars": [
-      "error",
-      { "argsIgnorePattern": "^_" }
-    ]
+    "@typescript-eslint/consistent-type-imports": "error"
   },
   "overrides": [
     {
