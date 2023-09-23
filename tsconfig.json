@@ -24,6 +24,7 @@
       "@/*": ["./*"],
       "@api/*": ["./app/api/*"],
       "@db/*": ["./app/api/db/*"],
+      "@components/*": ["./components/*"],
     }
   },
   "include": [
