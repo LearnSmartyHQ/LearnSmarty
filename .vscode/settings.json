@@ -62,6 +62,9 @@
         "editor.formatOnSave": true,
         "editor.formatOnType": true,
     },
+    "[prisma]": {
+        "editor.defaultFormatter": "Prisma.prisma"
+    },
     "jest.autoRun": {
         "watch": false,
       },

@@ -3,6 +3,7 @@
     "dbaeumer.vscode-eslint",
     "ms-azuretools.vscode-docker",
     "eamodio.gitlens",
+    "Prisma.prisma",
     "dsznajder.es7-react-js-snippets",
     "GitHub.copilot",
     "ms-vscode.vscode-typescript-next",

@@ -9,3 +9,100 @@ datasource db {
   provider = "mongodb"
   url      = env("DATABASE_URL")
 }
+
+model User {
+  id          String       @id @default(auto()) @map("_id") @db.ObjectId
+  email       String       @unique
+  name        String
+  role        Role         @default(USER)
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime?    @updatedAt
+  collections Collection[]
+  Learn       Learn[]
+}
+
+enum Role {
+  USER
+  ADMIN
+}
+
+model Collection {
+  id        String            @id @default(auto()) @map("_id") @db.ObjectId
+  slug      String            @unique
+  title     String
+  desc      String?
+  image     String?
+  video     String?
+  tags      String[]
+  subject   CollectionSubject @default(Language)
+  status    CollectionStatus  @default(Draft)
+  ownerId   String            @db.ObjectId
+  owner     User              @relation(fields: [ownerId], references: [id])
+  createdAt DateTime          @default(now())
+  updatedAt DateTime?         @updatedAt
+  cards     Card[]
+}
+
+enum CollectionSubject {
+  English
+  Language
+  Science
+  Art
+  Math
+  History
+  Geography
+  Social
+  Music
+  Other
+}
+
+enum CollectionStatus {
+  Published
+  Pending
+  Draft
+  Deleted
+}
+
+model Card {
+  id           String     @id @default(auto()) @map("_id") @db.ObjectId
+  folder       String?
+  front        CardData
+  back         CardData[]
+  collection   Collection @relation(fields: [collectionId], references: [id])
+  collectionId String     @db.ObjectId
+  createdAt    DateTime   @default(now())
+  updatedAt    DateTime   @updatedAt
+  Learn        Learn[]
+}
+
+// Address is an embedded document
+type CardData {
+  title    String
+  desc     String?
+  detail   Json?
+  image    String?
+  audio    String?
+  video    String?
+  link     String?
+  Language String
+  default  Boolean @default(false)
+}
+
+model Learn {
+  id        String      @id @default(auto()) @map("_id") @db.ObjectId
+  userId    String      @db.ObjectId
+  user      User        @relation(fields: [userId], references: [id])
+  cardId    String      @db.ObjectId
+  card      Card        @relation(fields: [cardId], references: [id])
+  timeSpent Int         @default(0)
+  status    LearnStatus @default(NotStarted)
+  createdAt DateTime    @default(now())
+  updatedAt DateTime    @updatedAt
+}
+
+enum LearnStatus {
+  Passed
+  Failed
+  Skipped
+  NotStarted
+}
