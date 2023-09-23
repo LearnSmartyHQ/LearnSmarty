@@ -1,5 +1,5 @@
+import type { IApi } from '@api/_interface/api-response';
 import { NextResponse } from 'next/server';
-import type { IApi } from '../api-interface';
 
 export function GET() {
   const sampleResponse: IApi = {

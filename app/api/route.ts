@@ -1,5 +1,5 @@
+import type { IApi } from '@api/_interface/api-response';
 import { NextResponse } from 'next/server';
-import type { IApi } from './api-interface';
 
 // Revalidate every 60 seconds
 export const revalidate = 60;
