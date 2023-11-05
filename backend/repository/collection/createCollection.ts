@@ -3,12 +3,12 @@ import { collectionTransform } from './collection-transform';
 import type { ICollection } from './interfaces/collection-interface';
 
 export const createCollection = async (myData: ICollection)
-: Promise<ICollection> => {
+: Promise<ICollection | null> => {
   const qryResponse = await prisma.collection.create({
     data: myData,
   });
 
-  const repoResult: ICollection = collectionTransform(qryResponse);
+  const repoResult = collectionTransform(qryResponse);
 
   return repoResult;
 };

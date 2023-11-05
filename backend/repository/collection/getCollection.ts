@@ -2,16 +2,15 @@ import prisma from '@repository/prisma';
 import { collectionTransform } from './collection-transform';
 import type { ICollection } from './interfaces/collection-interface';
 
-export const editCollection = async (myData: ICollection)
+export const getCollection = async (slug: string)
 : Promise<ICollection | null> => {
-  const qryResponse = await prisma.collection.update({
+  const qryResponse = await prisma.collection.findUnique({
     where: {
-      slug: myData.slug,
+      slug,
     },
-    data: myData,
   });
 
-  const repoResult = collectionTransform(qryResponse);
+  const transformedCollection = collectionTransform(qryResponse);
 
-  return repoResult;
+  return transformedCollection;
 };
