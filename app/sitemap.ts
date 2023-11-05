@@ -1,4 +1,4 @@
-import { projectConfig } from '@/backend/config';
+import { projectConfig } from '@config';
 import type { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {

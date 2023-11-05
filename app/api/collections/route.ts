@@ -1,5 +1,5 @@
-import { getCollectionsList } from '@/backend/db/collection/getCollectionsList';
 import type { IApi } from '@api/_interface/api-response';
+import { getCollectionsList } from '@repository/collection/getCollectionsList';
 import { NextResponse } from 'next/server';
 
 // Revalidate every 60 seconds

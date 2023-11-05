@@ -1,8 +1,8 @@
-import '@/app/_styles/globals.css';
-import { sharedMetadata } from '@/backend/utils/seo/shared-metadata';
-import { sharedViewport } from '@/backend/utils/seo/shared-viewport';
+import { sharedMetadata } from '@helper/seo/shared-metadata';
+import { sharedViewport } from '@helper/seo/shared-viewport';
 import type { Metadata, Viewport } from 'next';
 import { Raleway } from 'next/font/google';
+import './_styles/globals.css';
 
 const raleway = Raleway({
   // weight: ['400', '700'],
