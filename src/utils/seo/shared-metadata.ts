@@ -1,22 +1,19 @@
-import {
-  siteDesc, siteKeywords, siteSlogan, siteTitle, siteUrl,
-} from '@src/config/site';
-import { twUsername } from '@src/config/tw';
+import { projectConfig } from '@config';
 import type { Metadata } from 'next';
 
 // https://nextjs.org/docs/app/api-reference/functions/generate-metadata
 export const sharedMetadata: Metadata = {
-  metadataBase: new URL(siteUrl),
+  metadataBase: new URL(projectConfig.siteUrl),
   title: {
-    template: `%s | ${siteTitle}`,
-    default: siteTitle,
+    template: `%s | ${projectConfig.siteTitle}`,
+    default: projectConfig.siteTitle,
     // title.absolute can be used to provide a title that ignores title.template set in parent segments.
-    absolute: `${siteTitle} - ${siteSlogan}`,
+    absolute: `${projectConfig.siteTitle} - ${projectConfig.siteSlogan}`,
   },
-  description: siteDesc,
-  applicationName: siteTitle,
+  description: projectConfig.siteDesc,
+  applicationName: projectConfig.siteTitle,
   referrer: 'origin-when-cross-origin',
-  keywords: siteKeywords,
+  keywords: projectConfig.siteKeywords,
   // generator: 'Rocket',
   // creator: 'MrAdib',
   // authors: [
@@ -26,19 +23,19 @@ export const sharedMetadata: Metadata = {
   //   },
   // ],
 
-  // manifest: `${siteUrl}/manifest.json`,
+  // manifest: `${projectConfig.siteUrl}/manifest.json`,
   category: 'learning',
   openGraph: {
-    title: siteTitle,
-    description: siteDesc,
-    url: siteUrl,
-    siteName: siteTitle,
+    title: projectConfig.siteTitle,
+    description: projectConfig.siteDesc,
+    url: projectConfig.siteUrl,
+    siteName: projectConfig.siteTitle,
     // images: [
     //   {
-    //     url: `${siteUrl}/og-alt.png`,
+    //     url: `${projectConfig.siteUrl}/og-alt.png`,
     //     width: 1800,
     //     height: 1600,
-    //     alt: `${siteTitle} - ${siteSlogan}`,
+    //     alt: `${projectConfig.siteTitle} - ${siteSlogan}`,
     //   },
     // ],
     locale: 'en_US',
@@ -46,13 +43,13 @@ export const sharedMetadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: siteTitle,
-    description: siteDesc,
+    title: projectConfig.siteTitle,
+    description: projectConfig.siteDesc,
     // siteId: '1467726470533754880',
-    creator: twUsername,
+    creator: projectConfig.twUsername,
     // images: {
-    //   url: `${siteUrl}/og.png`,
-    //   alt: siteTitle,
+    //   url: `${projectConfig.siteUrl}/og.png`,
+    //   alt: projectConfig.siteTitle,
     // },
   },
   // icons: {

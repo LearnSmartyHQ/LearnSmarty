@@ -21,11 +21,13 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"],
+      "@config": ["./src/config"],
       "@api/*": ["./app/api/*"],
-      "@db/*": ["./app/api/db/*"],
+      "@db/*": ["./src/db/*"],
+      "@businessLogic/*": ["./src/businessLogic/*"],
+      "@utils/*": ["./src/utils/*"],
       "@components/*": ["./components/*"],
-      "@src/*": ["./src/*"],
+      "@/*": ["./*"],
     }
   },
   "include": [

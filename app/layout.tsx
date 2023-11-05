@@ -1,6 +1,6 @@
 import '@/app/_styles/globals.css';
-import { sharedMetadata } from '@/src/seo/shared-metadata';
-import { sharedViewport } from '@/src/seo/shared-viewport';
+import { sharedMetadata } from '@utils/seo/shared-metadata';
+import { sharedViewport } from '@utils/seo/shared-viewport';
 import type { Metadata, Viewport } from 'next';
 import { Raleway } from 'next/font/google';
 
