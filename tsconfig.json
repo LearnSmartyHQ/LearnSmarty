@@ -21,11 +21,11 @@
       }
     ],
     "paths": {
-      "@config": ["./src/config"],
+      "@config": ["backend/config"],
       "@api/*": ["./app/api/*"],
-      "@db/*": ["./src/db/*"],
-      "@businessLogic/*": ["./src/businessLogic/*"],
-      "@utils/*": ["./src/utils/*"],
+      "@db/*": ["backend/db/*"],
+      "@businessLogic/*": ["backend/businessLogic/*"],
+      "@utils/*": ["backend/utils/*"],
       "@components/*": ["./components/*"],
       "@/*": ["./*"],
     }

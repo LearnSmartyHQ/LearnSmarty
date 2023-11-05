@@ -1,4 +1,4 @@
-import { projectConfig } from '@config';
+import { projectConfig } from '@/backend/config';
 import type { Metadata } from 'next';
 
 // https://nextjs.org/docs/app/api-reference/functions/generate-metadata
