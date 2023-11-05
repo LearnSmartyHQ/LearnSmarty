@@ -1,5 +1,5 @@
-import type { CollectionStatus } from './collection-status-enum';
-import type { CollectionSubject } from './collection-subject-enum';
+import type { ICollectionStatus } from './collection-status-enum';
+import type { ICollectionSubject } from './collection-subject-enum';
 
 export interface ICollection {
   slug: string;
@@ -8,8 +8,8 @@ export interface ICollection {
   image?: string;
   video?: string;
   tags?: string[];
-  subject?: CollectionSubject;
-  status?: CollectionStatus;
+  subject?: ICollectionSubject;
+  status?: ICollectionStatus;
   ownerId: string;
   createdAt?: Date;
   updatedAt?: Date;

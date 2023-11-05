@@ -1,4 +1,4 @@
-export enum CollectionSubject {
+export enum ICollectionSubject {
   English = 'English',
   Language = 'Language',
   Science = 'Science',
