@@ -1,4 +1,4 @@
-import { siteUrl } from '@config/site';
+import { siteUrl } from '@/src/config/site';
 import type { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {

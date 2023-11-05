@@ -1,6 +1,0 @@
-User-Agent: *
-Allow: /
-
-Disallow: /api/
-
-Sitemap: https://learnsmarty.com/sitemap.xml

@@ -1,7 +1,7 @@
 import {
   siteDesc, siteKeywords, siteSlogan, siteTitle, siteUrl,
-} from '@config/site';
-import { twUsername } from '@config/tw';
+} from '@src/config/site';
+import { twUsername } from '@src/config/tw';
 import type { Metadata } from 'next';
 
 // https://nextjs.org/docs/app/api-reference/functions/generate-metadata
