@@ -1,15 +1,12 @@
-import type { CollectionUpdateInput } from '@prisma/client';
 import prisma from '@repository/prisma';
-import type { ICollection } from './collection-interface';
+import type { ICollection } from './interfaces/collection-interface';
 
-export const editCollection = async (data: ICollection) => {
-  const { id, ...updateData } = data;
-
+export const editCollection = async (myData: ICollection) => {
   const editedCollection = await prisma.collection.update({
     where: {
-      id,
+      slug: myData.slug,
     },
-    data: updateData as CollectionUpdateInput,
+    data: myData,
   });
 
   return editedCollection;
