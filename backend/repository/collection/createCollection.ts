@@ -8,7 +8,7 @@ export const createCollection = async (myData: ICollection)
     data: myData,
   });
 
-  const qryResult: ICollection = collectionTransform(qryResponse);
+  const repoResult: ICollection = collectionTransform(qryResponse);
 
-  return qryResult;
+  return repoResult;
 };
