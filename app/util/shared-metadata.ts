@@ -20,6 +20,7 @@ const twUsername = '@MrAdib';
 
 // https://nextjs.org/docs/app/api-reference/functions/generate-metadata
 export const sharedMetadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: {
     template: `%s | ${siteTitle}`,
     default: siteTitle,
@@ -38,17 +39,8 @@ export const sharedMetadata: Metadata = {
   //     url: 'https://MrAdib.com',
   //   },
   // ],
-  colorScheme: 'dark',
-  themeColor: [
-    { media: '(prefers-color-scheme: light)', color: 'white' },
-    { media: '(prefers-color-scheme: dark)', color: 'black' },
-  ],
+
   // manifest: `${siteUrl}manifest.json`,
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-    maximumScale: 1,
-  },
   category: 'learning',
   openGraph: {
     title: siteTitle,
