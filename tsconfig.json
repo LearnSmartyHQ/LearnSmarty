@@ -25,6 +25,8 @@
       "@api/*": ["./app/api/*"],
       "@db/*": ["./app/api/db/*"],
       "@components/*": ["./components/*"],
+      "@src/*": ["./src/*"],
+      "@config/*": ["./src/config/*"],
     }
   },
   "include": [

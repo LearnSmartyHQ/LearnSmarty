@@ -1,22 +1,8 @@
+import {
+  siteDesc, siteKeywords, siteSlogan, siteTitle, siteUrl,
+} from '@config/site';
+import { twUsername } from '@config/tw';
 import type { Metadata } from 'next';
-
-const siteUrl = 'https://learnsmarty.com/';
-const siteTitle = 'Learn Smarty';
-const siteSlogan = 'Learn Smarter, Not Harder.';
-const siteShortDesc = 'AI-driven flashcards, making learning efficient and smart.';
-const siteDesc = `${siteShortDesc} ${siteSlogan} 😎 ${siteTitle} 🆒`;
-const siteKeywords = [
-  'learn',
-  'LearnSmarty',
-  'Leitner',
-  'flashcard',
-  'flashcard learning',
-  'AI learning',
-  'Leitner Flashcard',
-  'Leitner 504',
-];
-
-const twUsername = '@MrAdib';
 
 // https://nextjs.org/docs/app/api-reference/functions/generate-metadata
 export const sharedMetadata: Metadata = {
@@ -40,7 +26,7 @@ export const sharedMetadata: Metadata = {
   //   },
   // ],
 
-  // manifest: `${siteUrl}manifest.json`,
+  // manifest: `${siteUrl}/manifest.json`,
   category: 'learning',
   openGraph: {
     title: siteTitle,
@@ -49,7 +35,7 @@ export const sharedMetadata: Metadata = {
     siteName: siteTitle,
     // images: [
     //   {
-    //     url: `${siteUrl}og-alt.png`,
+    //     url: `${siteUrl}/og-alt.png`,
     //     width: 1800,
     //     height: 1600,
     //     alt: `${siteTitle} - ${siteSlogan}`,
