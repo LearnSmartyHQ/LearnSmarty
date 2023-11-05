@@ -1,5 +1,5 @@
 import prisma from '@repository/prisma';
-import { collectionTransform } from './collection-transform';
+import { collectionTransform } from './dto/collection-transform';
 import type { ICollection } from './interfaces/collection-interface';
 
 export const editCollection = async (myData: ICollection)

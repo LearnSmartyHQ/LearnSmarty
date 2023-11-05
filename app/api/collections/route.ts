@@ -1,12 +1,13 @@
 import type { IApi } from '@api/_interface/api-response';
-import { getCollectionsList } from '@repository/collection/getCollectionsList';
+import { getAllCollections } from '@repository/collection/getAllCollections';
+
 import { NextResponse } from 'next/server';
 
 // Revalidate every 60 seconds
 export const revalidate = 60;
 
 export async function GET(): Promise<NextResponse<IApi>> {
-  const myResult = await getCollectionsList();
+  const myResult = await getAllCollections();
   const apiResponse: IApi = {
     okay: true,
     result: myResult,
