@@ -1,6 +1,15 @@
 import { NextResponse } from 'next/server';
-import { sampleErrorResponse } from './sampleError';
+import type { IApi } from '../_interface/api-response';
 
-export function GET() {
+const sampleErrorResponse: IApi = {
+  okay: false,
+  messages: [{
+    title: 'Not Found',
+    body: 'The requested resource was not found.',
+    type: 'error',
+  }],
+};
+
+export function GET(): NextResponse<IApi> {
   return NextResponse.json(sampleErrorResponse);
 }

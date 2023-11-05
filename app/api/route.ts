@@ -17,6 +17,6 @@ const apiHomeResponse: IApi = {
   }],
 };
 
-export async function GET(): Promise<NextResponse> {
+export async function GET(): Promise<NextResponse<IApi>> {
   return NextResponse.json(apiHomeResponse);
 }
