@@ -24,10 +24,12 @@
     "paths": {
       // backend layers
       "@api/*": ["./app/api/*"],
-      "@businessLogic/*": ["./backend/businessLogic/*"],
-      "@config": ["./backend/config"],
-      "@controllers/*": ["./backend/controllers/*"],
-      "@repository/*": ["./backend/repository/*"],
+      // domains
+      "@collection/*": ["./backend/collection/*"],
+      "@card/*": ["./backend/card/*"],
+      "@user/*": ["./backend/user/*"],
+      // config
+      "@config": ["./src/config"],
       // utils
       "@errors/*": ["./backend/utils/errors/*"],
       "@utils/*": ["./backend/utils/*"],

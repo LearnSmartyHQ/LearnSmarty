@@ -1,6 +1,6 @@
+import type { ICollection } from '@collection/interfaces/collection-interface';
 import ForbiddenError from '@errors/forbidden-error';
-import type { IUser } from '@repository/user/interfaces/user-interface';
-import type { ICollection } from './interfaces/collection-interface';
+import type { IUser } from '@user/interfaces/user-interface';
 
 interface IOwnershipCollection {
   user: IUser;
