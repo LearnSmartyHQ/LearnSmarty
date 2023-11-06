@@ -22,12 +22,16 @@
     ],
     "baseUrl": "./",
     "paths": {
+      // backend layers
       "@api/*": ["./app/api/*"],
       "@businessLogic/*": ["./backend/businessLogic/*"],
       "@config": ["./backend/config"],
       "@controllers/*": ["./backend/controllers/*"],
       "@repository/*": ["./backend/repository/*"],
+      // utils
+      "@errors/*": ["./backend/utils/errors/*"],
       "@utils/*": ["./backend/utils/*"],
+      // components
       "@components/*": ["./components/*"],
       "@helper/*": ["./src/helper/*"],
       // "@/*": ["./*"],
