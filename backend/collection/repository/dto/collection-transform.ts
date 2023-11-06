@@ -1,7 +1,7 @@
+import type { ICollection } from '@collection/interfaces/collection-interface';
+import type { ICollectionStatus } from '@collection/interfaces/collection-status-enum';
+import type { ICollectionSubject } from '@collection/interfaces/collection-subject-enum';
 import type { Collection } from '@prisma/client';
-import type { ICollection } from '../interfaces/collection-interface';
-import type { ICollectionStatus } from '../interfaces/collection-status-enum';
-import type { ICollectionSubject } from '../interfaces/collection-subject-enum';
 
 export const collectionTransform = (myData: Collection | null)
 : ICollection | null => {
