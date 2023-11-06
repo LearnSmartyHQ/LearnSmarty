@@ -8,7 +8,7 @@ interface IOwnershipCollection {
 }
 
 // export const checkCollectionOwnership = (user: IUser, collection: ICollection)
-export const checkCollectionOwnership = ({
+export const collectionOwnership = ({
   user,
   collection,
 }: IOwnershipCollection)
