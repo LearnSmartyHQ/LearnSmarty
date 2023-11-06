@@ -1,5 +1,5 @@
 import type { IApi } from '@api/_interface/api-response';
-import { getAllCollections } from 'backend/collection/repository/getAllCollections';
+import { getAllCollections } from '@collection/repository/getAllCollections';
 
 import { NextResponse } from 'next/server';
 
