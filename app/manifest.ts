@@ -1,11 +1,11 @@
-import { projectConfig } from '@config';
+import { siteDesc, siteName, siteShortName } from '@data/site';
 import type { MetadataRoute } from 'next';
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: projectConfig.siteTitle,
-    short_name: projectConfig.siteTitle,
-    description: projectConfig.siteDesc,
+    name: siteName,
+    short_name: siteShortName,
+    description: siteDesc,
     start_url: '/',
     display: 'standalone',
     background_color: '#fff',

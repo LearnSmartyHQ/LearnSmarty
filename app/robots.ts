@@ -1,4 +1,4 @@
-import { projectConfig } from '@config';
+import { siteUrlSitemap } from '@data/site/url';
 import type { MetadataRoute } from 'next';
 
 export default function robots(): MetadataRoute.Robots {
@@ -8,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/api/',
     },
-    sitemap: `${projectConfig.siteUrl}/sitemap.xml`,
+    sitemap: siteUrlSitemap,
   };
 }

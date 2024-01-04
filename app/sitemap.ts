@@ -1,16 +1,16 @@
-import { projectConfig } from '@config';
+import { siteUrl } from '@data/site/url';
 import type { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: projectConfig.siteUrl,
+      url: siteUrl,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 1,
     },
     {
-      url: `${projectConfig.siteUrl}/about`,
+      url: `${siteUrl}/about`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,

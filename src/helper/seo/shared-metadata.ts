@@ -1,19 +1,22 @@
-import { projectConfig } from '@config';
+import { siteDesc, siteName, siteSlogan } from '@data/site';
+import { siteKeywords } from '@data/site/keywords';
+import { twUsername } from '@data/site/social';
+import { siteUrl } from '@data/site/url';
 import type { Metadata } from 'next';
 
 // https://nextjs.org/docs/app/api-reference/functions/generate-metadata
 export const sharedMetadata: Metadata = {
-  metadataBase: new URL(projectConfig.siteUrl),
+  metadataBase: new URL(siteUrl),
   title: {
-    template: `%s | ${projectConfig.siteTitle}`,
-    default: projectConfig.siteTitle,
+    template: `%s | ${siteName}`,
+    default: siteName,
     // title.absolute can be used to provide a title that ignores title.template set in parent segments.
-    absolute: `${projectConfig.siteTitle} - ${projectConfig.siteSlogan}`,
+    absolute: `${siteName} - ${siteSlogan}`,
   },
-  description: projectConfig.siteDesc,
-  applicationName: projectConfig.siteTitle,
+  description: siteDesc,
+  applicationName: siteName,
   referrer: 'origin-when-cross-origin',
-  keywords: projectConfig.siteKeywords,
+  keywords: siteKeywords,
   // generator: 'Rocket',
   // creator: 'MrAdib',
   // authors: [
@@ -23,19 +26,19 @@ export const sharedMetadata: Metadata = {
   //   },
   // ],
 
-  // manifest: `${projectConfig.siteUrl}/manifest.json`,
+  // manifest: `${siteUrl}/manifest.json`,
   category: 'learning',
   openGraph: {
-    title: projectConfig.siteTitle,
-    description: projectConfig.siteDesc,
-    url: projectConfig.siteUrl,
-    siteName: projectConfig.siteTitle,
+    title: siteName,
+    description: siteDesc,
+    url: siteUrl,
+    siteName,
     // images: [
     //   {
-    //     url: `${projectConfig.siteUrl}/og-alt.png`,
+    //     url: `${siteUrl}/og-alt.png`,
     //     width: 1800,
     //     height: 1600,
-    //     alt: `${projectConfig.siteTitle} - ${siteSlogan}`,
+    //     alt: `${siteName} - ${siteSlogan}`,
     //   },
     // ],
     locale: 'en_US',
@@ -43,13 +46,13 @@ export const sharedMetadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: projectConfig.siteTitle,
-    description: projectConfig.siteDesc,
+    title: siteName,
+    description: siteDesc,
     // siteId: '1467726470533754880',
-    creator: projectConfig.twUsername,
+    creator: twUsername,
     // images: {
-    //   url: `${projectConfig.siteUrl}/og.png`,
-    //   alt: projectConfig.siteTitle,
+    //   url: `${siteUrl}/og.png`,
+    //   alt: siteName,
     // },
   },
   // icons: {

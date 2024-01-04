@@ -29,7 +29,7 @@
       "@card/*": ["./backend/card/*"],
       "@user/*": ["./backend/user/*"],
       // config
-      "@config": ["./src/config"],
+      "@data/*": ["./data/*"],
       // utils
       "@errors/*": ["./backend/utils/errors/*"],
       "@utils/*": ["./backend/utils/*"],
