@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -23,19 +27,37 @@
     "baseUrl": "./",
     "paths": {
       // backend layers
-      "@api/*": ["./app/api/*"],
+      "@api/*": [
+        "./app/api/*"
+      ],
       // domains
-      "@collection/*": ["./backend/collection/*"],
-      "@card/*": ["./backend/card/*"],
-      "@user/*": ["./backend/user/*"],
-      // config
-      "@data/*": ["./data/*"],
+      "@collection/*": [
+        "./backend/collection/*"
+      ],
+      "@card/*": [
+        "./backend/card/*"
+      ],
+      "@user/*": [
+        "./backend/user/*"
+      ],
+      // data
+      "@data/*": [
+        "./data/*"
+      ],
       // utils
-      "@errors/*": ["./backend/utils/errors/*"],
-      "@utils/*": ["./backend/utils/*"],
+      "@errors/*": [
+        "./backend/utils/errors/*"
+      ],
+      "@utils/*": [
+        "./backend/utils/*"
+      ],
       // components
-      "@components/*": ["./components/*"],
-      "@helper/*": ["./src/helper/*"],
+      "@components/*": [
+        "./components/*"
+      ],
+      "@helper/*": [
+        "./src/helper/*"
+      ]
       // "@/*": ["./*"],
     }
   },
